@@ -1,0 +1,194 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+namespace Steam_kendaraan
+{
+    #region Admin_toko
+    public class Admin_toko
+    {
+        #region Member Variables
+        protected bool _id_user;
+        protected string _username;
+        protected string _password;
+        protected string _nama;
+        protected string _alamat;
+        protected string _hp;
+        protected bool _level;
+        #endregion
+        #region Constructors
+        public Admin_toko() { }
+        public Admin_toko(string username, string password, string nama, string alamat, string hp, bool level)
+        {
+            this._username=username;
+            this._password=password;
+            this._nama=nama;
+            this._alamat=alamat;
+            this._hp=hp;
+            this._level=level;
+        }
+        #endregion
+        #region Public Properties
+        public virtual bool Id_user
+        {
+            get {return _id_user;}
+            set {_id_user=value;}
+        }
+        public virtual string Username
+        {
+            get {return _username;}
+            set {_username=value;}
+        }
+        public virtual string Password
+        {
+            get {return _password;}
+            set {_password=value;}
+        }
+        public virtual string Nama
+        {
+            get {return _nama;}
+            set {_nama=value;}
+        }
+        public virtual string Alamat
+        {
+            get {return _alamat;}
+            set {_alamat=value;}
+        }
+        public virtual string Hp
+        {
+            get {return _hp;}
+            set {_hp=value;}
+        }
+        public virtual bool Level
+        {
+            get {return _level;}
+            set {_level=value;}
+        }
+        #endregion
+    }
+    #endregion
+}using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+namespace Steam_kendaraan
+{
+    #region Biaya
+    public class Biaya
+    {
+        #region Member Variables
+        protected int _id_biaya;
+        protected string _jenis;
+        protected int _biaya;
+        #endregion
+        #region Constructors
+        public Biaya() { }
+        public Biaya(string jenis, int biaya)
+        {
+            this._jenis=jenis;
+            this._biaya=biaya;
+        }
+        #endregion
+        #region Public Properties
+        public virtual int Id_biaya
+        {
+            get {return _id_biaya;}
+            set {_id_biaya=value;}
+        }
+        public virtual string Jenis
+        {
+            get {return _jenis;}
+            set {_jenis=value;}
+        }
+        public virtual int Biaya
+        {
+            get {return _biaya;}
+            set {_biaya=value;}
+        }
+        #endregion
+    }
+    #endregion
+}using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+namespace Steam_kendaraan
+{
+    #region Transaksi
+    public class Transaksi
+    {
+        #region Member Variables
+        protected int _id_transaksi;
+        protected string _no_nota;
+        protected string _jenis;
+        protected string _nama;
+        protected int _bayar;
+        protected int _kembali;
+        protected int _total;
+        protected unknown _tanggal;
+        protected bool _id_user;
+        #endregion
+        #region Constructors
+        public Transaksi() { }
+        public Transaksi(string no_nota, string jenis, string nama, int bayar, int kembali, int total, unknown tanggal, bool id_user)
+        {
+            this._no_nota=no_nota;
+            this._jenis=jenis;
+            this._nama=nama;
+            this._bayar=bayar;
+            this._kembali=kembali;
+            this._total=total;
+            this._tanggal=tanggal;
+            this._id_user=id_user;
+        }
+        #endregion
+        #region Public Properties
+        public virtual int Id_transaksi
+        {
+            get {return _id_transaksi;}
+            set {_id_transaksi=value;}
+        }
+        public virtual string No_nota
+        {
+            get {return _no_nota;}
+            set {_no_nota=value;}
+        }
+        public virtual string Jenis
+        {
+            get {return _jenis;}
+            set {_jenis=value;}
+        }
+        public virtual string Nama
+        {
+            get {return _nama;}
+            set {_nama=value;}
+        }
+        public virtual int Bayar
+        {
+            get {return _bayar;}
+            set {_bayar=value;}
+        }
+        public virtual int Kembali
+        {
+            get {return _kembali;}
+            set {_kembali=value;}
+        }
+        public virtual int Total
+        {
+            get {return _total;}
+            set {_total=value;}
+        }
+        public virtual unknown Tanggal
+        {
+            get {return _tanggal;}
+            set {_tanggal=value;}
+        }
+        public virtual bool Id_user
+        {
+            get {return _id_user;}
+            set {_id_user=value;}
+        }
+        #endregion
+    }
+    #endregion
+}
